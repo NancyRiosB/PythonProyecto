@@ -1,0 +1,36 @@
+{% block seccion %}
+<h1 style="margin-top: 0; padding-top: rem;">Buscar Curso</h1>
+{% endblock %}
+
+
+{% block contenido %}
+
+
+<main>
+
+
+    <div class="container">
+        <h2>Ingrese el curso</h2>
+        <div class="row">
+            <div class="col">
+                <form action="/buscar" method="GET">
+                    <p>Nombre</p>
+                    <input type="number" name="camada" id="camada">
+
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+
+
+
+
+
+
+
+{% endblock %}

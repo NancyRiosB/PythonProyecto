@@ -1,0 +1,16 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block seccion %}
+<h1 style="font: 1em sans-serif; color: blue;">Cursos</h1>
+{% if miFormulario.errors %}
+<p>Mal Los datos</p>
+{% endif %}
+{% endblock %}
+{% block contenido %}
+<form action="" method="POST">{% csrf_token %}
+    <table>
+        {{miFormulario.as_table}}
+    </table>
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}
